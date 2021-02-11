@@ -34,7 +34,7 @@ def check_game_over_condition(game_board_x, player_1, player_2, avail_moves):
         game_over_condition = (p1_count == dimension or p2_count == dimension)
         if game_over_condition:
             winner = set_winner(player_1, player_2, p1_count, p2_count, dimension)
-            print("Exit condition H")
+            # print("Exit condition H")
             break
     if not game_over_condition:
         # Vertical Win
@@ -53,7 +53,7 @@ def check_game_over_condition(game_board_x, player_1, player_2, avail_moves):
             game_over_condition = (p1_count == dimension or p2_count == dimension)
             if game_over_condition:
                 winner = set_winner(player_1, player_2, p1_count, p2_count, dimension)
-                print("Exit condition V")
+                # print("Exit condition V")
                 break
         if not game_over_condition:
             # Diagonal Win
@@ -86,7 +86,7 @@ def check_game_over_condition(game_board_x, player_1, player_2, avail_moves):
                     game_over_condition = (p1_count == dimension or p2_count == dimension)
                 if game_over_condition:
                     winner = set_winner(player_1, player_2, p1_count, p2_count, dimension)
-                    print("Exit condition D")
+                    # print("Exit condition D")
                     break
         else:
             pass
